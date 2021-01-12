@@ -11,7 +11,7 @@
 			:class="{expanded: state.expanded}"
 			@scroll="onScroll">
 			<li v-for="font in fontManager.fonts" :key="font.family">
-				<button type="button" class="font-abeezee"
+				<button type="button"
 						:class="`font-${snakeCase(font.family)}${pickerSuffix} ${font.family === state.activeFont ? 'active-font' : ''}`"
 						@click="itemClick(font)"
 						@keypress="itemClick(font)">{{font.family}}</button>
