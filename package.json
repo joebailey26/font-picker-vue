@@ -1,64 +1,44 @@
 {
-	"name": "font-picker-vue",
-	"version": "1.0.3",
-	"description": "Font selector component for Google Fonts",
-	"keywords": [
-		"fonts",
-		"google fonts",
-		"selector",
-		"picker",
-		"component",
-		"preview",
-		"download",
-		"vue",
-		"vue-component"
-	],
-	"main": "lib/FontPicker.js",
-	"author": "Rodrigo Bendia <rodrigobendia@gmail.com>",
-	"repository": "github:rodrigobendia/font-picker-vue",
-	"homepage": "https://samuelmeuli.github.io/font-picker",
-	"license": "MIT",
-	"scripts": {
-		"start": "npm-run-all build --parallel start:*",
-		"start:rollup": "rollup --config --sourcemap --watch",
-		"start:storybook": "start-storybook --port 3001",
-		"build": "rollup --config",
-		"lint": "eslint .",
-		"precommit": "npm run lint",
-		"prepush": "npm run lint"
-	},
-	"dependencies": {
-		"font-picker": "^2.0.6"
-	},
-	"peerDependencies": {
-		"vue": "^2.0.0"
-	},
-	"devDependencies": {
-		"@storybook/addon-actions": "^3.4.11",
-		"@storybook/addon-links": "^3.4.11",
-		"@storybook/addons": "^3.4.11",
-		"@storybook/vue": "^3.4.11",
-		"babel-core": "^6.26.3",
-		"babel-plugin-external-helpers": "^6.22.0",
-		"babel-preset-env": "^1.7.0",
-		"babel-preset-vue": "^2.0.2",
-		"eslint": "^4.19.1",
-		"eslint-config-airbnb": "^16.1.0",
-		"eslint-plugin-import": "^2.14.0",
-		"eslint-plugin-jsx-a11y": "^6.1.2",
-		"eslint-plugin-react": "^7.11.1",
-		"eslint-plugin-vue": "^4.7.1",
-		"husky": "^0.14.3",
-		"node-sass": "^4.9.3",
-		"npm-run-all": "^4.1.3",
-		"rollup": "^0.64.1",
-		"rollup-plugin-babel": "^3.0.7",
-		"rollup-plugin-vue": "^4.3.2",
-		"vue": "^2.0.0",
-		"vue-loader": "^15.4.2",
-		"vue-template-compiler": "^2.5.17"
-	},
-	"files": [
-		"lib/"
-	]
+  "name": "font-picker-vue",
+  "version": "2.0.0",
+  "description": "Vue 3 Font selector component for Google Fonts",
+  "main": "index.vue",
+  "scripts": {
+    "lint:scripts": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "fix:scripts": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint:styles": "stylelint \"**/*.{vue,scss}\"",
+    "fix:styles": "stylelint \"**/*.{vue,scss}\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joebailey26/font-picker-vue.git"
+  },
+  "author": "Joe Bailey <joe@joebailey.xyz>",
+  "license": "MIT",
+  "keywords": [
+    "fonts",
+    "google fonts",
+    "selector",
+    "picker",
+    "component",
+    "preview",
+    "download",
+    "vue",
+    "vue-component"
+  ],
+  "homepage": "https://samuelmeuli.github.io/font-picker",
+  "dependencies": {
+    "font-picker": "^2.0.6"
+  },
+  "peerDependencies": {
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-galexia": "https://github.com/Galexia-Agency/eslint-config",
+    "stylelint": "^15.3.0",
+    "stylelint-config-galexia": "https://github.com/Galexia-Agency/stylelint-config"
+  }
 }

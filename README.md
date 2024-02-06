@@ -64,12 +64,3 @@ The following **props** can be passed to the `FontPicker` component:
   * **`limit`**: Maximum number of fonts to be displayed in the list (the least popular fonts will be omitted; default: `100`)
   * **`sort`**: Sorting attribute for the font list – possible values: `'alphabetical'` (default), `'popularity'`
 * **`onChange`**: Function which is executed whenever the user changes the active font and its stylesheet finishes downloading
-
-
-## Contributing
-
-To build the project locally, do the following:
-
-* `git clone`
-* `npm install`
-* `npm start` to generate the library bundle using [Rollup](https://github.com/rollup/rollup) and and start the [Storybook](https://github.com/storybooks/storybook) for testing the component interactively (`localhost:3000`)
