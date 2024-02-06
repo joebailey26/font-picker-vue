@@ -21,7 +21,7 @@ _This is the Vue component for the [**Font Picker**](https://github.com/samuelme
 Install the package using **NPM**:
 
 ```sh
-npm install font-picker-vue
+npm install https://github.com/joebailey26/font-picker-vue
 ```
 
 
